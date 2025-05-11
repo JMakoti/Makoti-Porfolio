@@ -1,0 +1,95 @@
+{
+    "articles": [
+        {
+            "id": "certifications",
+            "component": "ArticleCards",
+            "config": {},
+            "locales": {
+                "en": { "title": "Certifications" }
+            },
+            "items": [
+                {
+                    "icon": {
+                        "img": null,
+                        "fa": "fa-brands fa-java",
+                        "faColors": {"bg": "#007396", "fill": "#EEE"}
+                    },
+                    "dates": {
+                        "start": "05/05/2022",
+                        "end": null
+                    },
+                    "links": [
+                        { "string": "see_certification", "href": "https://www.oracle.com/" }
+                    ],
+                    "locales": {
+                        "en": {
+                            "title": "**JavaScript**",
+                            "text": "Certified JavaScript Developer"
+                        }
+                    }
+                },
+                {
+                    "icon": {
+                        "img": null,
+                        "fa": "fa-solid fa-database",
+                        "faColors": {"bg": "#47A248", "fill": "#EEE"}
+                    },
+                    "dates": {
+                        "start": "08/15/2023",
+                        "end": null
+                    },
+                    "links": [
+                        { "string": "see_certification", "href": "https://www.mongodb.com/" }
+                    ],
+                    "locales": {
+                        "en": {
+                            "title": "**MongoDB** University",
+                            "text": "MongoDB Certified Developer"
+                        }
+                    }
+                }
+            ]
+        },
+
+        {
+            "id": "awards",
+            "component": "ArticleThread",
+            "config": {},
+            "locales": {
+                "en": { "title": "Awards" }
+            },
+            "items": [
+                {
+                    "dates": {
+                        "start": "09/01/2019",
+                        "end": null
+                    },
+                    "links": [],
+                    "locales": {
+                        "en": {
+                            "title": "**Best Final Year Project** – Frontend Optimization",
+                            "info": "RU",
+                            "text": "Recognized for innovative work on optimizing backend systems for cloud environments, achieving significant performance improvements."
+                        }
+                    }
+                },
+                {
+                    "dates": {
+                        "start": "05/01/2020",
+                        "end": null
+                    },
+                    "links": [
+                        { "string": "more_info", "href": "https://github.com/torvalds/linux" }
+                    ],
+                    "locales": {
+                        "en": {
+                            "title": "**Top Contributor** – Open Source Backend Project",
+                            "info": "GitHub",
+                            "text": "Awarded for contributing to an open-source backend framework that improved scalability and reduced latency."
+                        }
+                    }
+                }
+            ]
+        }
+    ]
+}

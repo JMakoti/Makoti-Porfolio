@@ -1,0 +1,92 @@
+{
+    "locales": {
+        "en": {
+            "title": "Life recently",
+            "title_menu": "Updates",
+            "title_long_prefix": "Take a look at my",
+            "title_long": "Recent **Updates**"
+        }
+    },
+
+    "articles": [
+        {
+            "id": "fun_facts",
+            "component": "ArticleServices",
+            "config": {},
+            "locales": {},
+
+            "items": [
+                {
+                    "icon": {
+                        "img": null,
+                        "fa": "fa-solid fa-diagram-project",
+                        "faColors": null
+                    },
+                    "locales": {
+                        "en": {
+                            "title": "00",
+                            "info": "Open-source projects"
+                        }
+                    }
+                },
+                {
+                    "icon": {
+                        "img": null,
+                        "fa": "fa-solid fa-coffee",
+                        "faColors": null
+                    },
+                    "locales": {
+                        "en": {
+                            "title": "20,000",
+                            "info": "Coffees consumed"
+                        }
+                    }
+                }
+
+            ]
+        },
+
+        {
+            "id": "updates",
+            "component": "ArticleThread",
+            "config": {},
+            "locales": {
+                "en": { "title": "Quick **Facts**" }
+            },
+
+            "items": [
+              
+
+                {
+                    "dates": {
+                        "start": "10/05/2025",
+                        "end": null
+                    },
+                    "links": [],
+                    "locales": {
+                        "en": {
+                            "title": "Working on a new **school project**!",
+                            "text": "Currently developing a school management system that integrates innovative features and user-friendly design, aimed at enhancing user experience and addressing specific market needs."
+                        }
+                    }
+                },
+
+                {
+                    "dates": {
+                        "start": "10/04/2025",
+                        "end": null
+                    },
+                    "links": [
+                        { "string": "see_more", "href": "#" }
+                    ],
+                    "locales": {
+                        "en": {
+                            "title": "Launched my **personal website**!",
+                            "text": "Created a personal website to showcase my projects, share my journey in programming, and provide resources for fellow developers."
+                        }
+                    }
+                }
+            ]
+        }
+    ]
+}
