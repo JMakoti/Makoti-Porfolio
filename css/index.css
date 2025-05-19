@@ -176,13 +176,14 @@ ul {
 
 
 /* home section text content */
-.home {
+.cover {
   display: flex;
   color: var(--text-color);
-  width: 100%;
-  background-color: blue;
-  justify-content: center;
 
+}
+
+.home-info {
+  width: 500px;
 }
 
 h3.hello {
@@ -229,13 +230,34 @@ h3.profession {
 }
 
 /* home section image */
-.home-img {
+
+#Types {
   position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
 
 }
 
-.home-img img {
+.blob {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 450px;
+  height: 450px;
+  z-index: 1;
+  background-color: #ec1839;
+  object-fit: cover;
+  border-radius: 66% 34% 59% 41% / 30% 28% 72% 70%;
+  z-index: 2;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+.blob img {
   width: 100%;
+
 }
 
 .btn {
@@ -253,6 +275,7 @@ h3.profession {
 .btn:hover {
   transform: scale(1.05);
 }
+
 
 /* Sevices */
 .container-cards {
