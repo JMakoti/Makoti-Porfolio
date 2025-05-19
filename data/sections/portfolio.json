@@ -6,49 +6,62 @@
             "title_long": "My **Portfolio**"
         }
     },
-
     "articles": [
         {
             "id": "portfolio",
             "component": "ArticlePortfolio",
             "config": {},
             "locales": {},
-
             "categories": [
                 {
                     "id": "apps",
                     "locales": {
-                        "en": {"singular": "App", "plural": "Apps"}
+                        "en": {
+                            "singular": "App",
+                            "plural": "Apps"
+                        }
                     }
                 },
                 {
                     "id": "websites",
                     "locales": {
-                        "en": {"singular": "Website", "plural": "Web"}
+                        "en": {
+                            "singular": "Website",
+                            "plural": "Web"
+                        }
                     }
                 },
                 {
                     "id": "utilities",
                     "locales": {
-                        "en": {"singular": "Utility", "plural": "Utilities"}
+                        "en": {
+                            "singular": "Utility",
+                            "plural": "Utilities"
+                        }
                     }
                 }
             ],
-
             "items": [
                 {
                     "categoryId": "websites",
                     "icon": {
                         "img": "images/safaricart.jpg",
                         "fa": "",
-                        "faColors": {"bg": null, "fill": null}
+                        "faColors": {
+                            "bg": null,
+                            "fill": null
+                        }
                     },
-
                     "links": [
-                        {"faIcon": "fa-brands fa-github", "href": "https://github.com"},
-                        {"faIcon": "fa-brands fa-npm", "href": "https://npm.com"}
+                        {
+                            "faIcon": "fa-brands fa-github",
+                            "href": "https://github.com"
+                        },
+                        {
+                            "faIcon": "fa-brands fa-npm",
+                            "href": "https://npm.com"
+                        }
                     ],
-
                     "media": {
                         "youtubeVideo": "https://www.youtube.com/",
                         "screenshots": {
@@ -56,29 +69,38 @@
                             "images": []
                         }
                     },
-
                     "locales": {
                         "en": {
                             "title": "BrainPulse",
                             "text": "A <b>RESTful API</b> backend built with <b>Node.js</b>, designed for high-performance data processing and real-time event handling.",
-                            "tags": ["API", "REST", "Backend"]
+                            "tags": [
+                                "API",
+                                "REST",
+                                "Backend"
+                            ]
                         }
                     }
                 },
-
                 {
                     "categoryId": "apps",
                     "icon": {
                         "img": "images/contactapp.jpg",
                         "fa": "",
-                        "faColors": {"bg": null, "fill": null}
+                        "faColors": {
+                            "bg": null,
+                            "fill": null
+                        }
                     },
-
                     "links": [
-                        {"faIcon": "fa-brands fa-apple", "href": "https://apple.com"},
-                        {"faIcon": "fa-brands fa-google-play", "href": "https://google.com"}
+                        {
+                            "faIcon": "fa-brands fa-apple",
+                            "href": "https://apple.com"
+                        },
+                        {
+                            "faIcon": "fa-brands fa-google-play",
+                            "href": "https://google.com"
+                        }
                     ],
-
                     "media": {
                         "youtubeVideo": "",
                         "screenshots": {
@@ -89,28 +111,33 @@
                             ]
                         }
                     },
-
                     "locales": {
                         "en": {
                             "title": "Contacts ",
                             "text": "A cross-platform contact  client built with <b>JavaScript</b>, providing efficient communication with an intuitive UI for <b>managing Contacts</b>.",
-                            "tags": ["JavaScript", "Communication"]
+                            "tags": [
+                                "JavaScript",
+                                "Communication"
+                            ]
                         }
                     }
                 },
-
                 {
                     "categoryId": "websites",
                     "icon": {
                         "img": "images/mywallet.jpg",
                         "fa": "",
-                        "faColors": {"bg": null, "fill": null}
+                        "faColors": {
+                            "bg": null,
+                            "fill": null
+                        }
                     },
-
                     "links": [
-                        {"faIcon": "fa-solid fa-link", "href": "#"}
+                        {
+                            "faIcon": "fa-solid fa-link",
+                            "href": "#"
+                        }
                     ],
-
                     "media": {
                         "youtubeVideo": "",
                         "screenshots": {
@@ -118,12 +145,15 @@
                             "images": []
                         }
                     },
-
                     "locales": {
                         "en": {
                             "title": "My Wallet",
                             "text": "A finance website built using <b>React.js</b>, allowing users to <b>track budgets</b> and manage their money with interactive charts and insights.",
-                            "tags": ["React.js", "Finance", "Money"]
+                            "tags": [
+                                "React.js",
+                                "Finance",
+                                "Money"
+                            ]
                         }
                     }
                 }

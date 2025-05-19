@@ -1,9 +1,43 @@
 
-//mapping the navigation panel {sidebar}
-fetch('../data/structure.json')
-    .then(response => response.json()) // Fetch the JSON data
+
+//FETCHING AND RENDERING THE PROFILE SECTION FROM THE PROFILE.JSON
+fetch('./data/profile.json')
+    .then(response => response.json())
     .then(data => {
-        const sections = data.sections; // Get the sections array from the JSON
+        const profile = data.profile;
+        console.log(profile)
+        // Function to create profile
+        function renderProfile() {
+            const profileContainer = document.getElementById('profiles');
+
+            //create <div> elements
+            const listItem = document.createElement('div');
+            listItem.className = 'profile'
+            listItem.innerHTML = `
+                        <div class="logo">
+                        <img src="${profile.logoUrl}" alt="${profile.profilePictureUrl}">
+                        </div>
+                        <div class="social-icons">
+                            <a href="${profile.linkedIn}"><i class='bx bxl-linkedin' ></i></a>
+                            <a href="${profile.github}"><i class='bx bxl-github' ></i></a>
+                            <a href="${profile.Twitter}"><i class='bx bxl-twitter'></i></a>
+                            <a href="${profile.discord}"><i class='bx bxl-discord'></i></a>
+                        </div>
+                `;
+            profileContainer.appendChild(listItem);
+        }
+
+        // Call the function to render the details when the page loads
+        renderProfile();
+    })
+    .catch(error => console.error('Error loading JSON:', error));
+
+
+//FETCHING AND RENDERING THE NAVIGATION PANEL { SIDEBAR } FROM STRUCTURE.JSON
+fetch('../data/structure.json')
+    .then(response => response.json())
+    .then(data => {
+        const sections = data.sections;
         console.log(sections)
         // Function to create navigation links
         function renderNavLinks() {
@@ -32,7 +66,7 @@ fetch('../data/structure.json')
     .catch(error => console.error('Error loading JSON:', error));
 
 
-// Fetch and render service cards from skills.json
+//FETCHING AND RENDERING THE SKILLS CARDS FROM SKILLS.JSON
 fetch('./data/sections/skills.json')
     .then(response => response.json())
     .then(data => {
@@ -62,7 +96,7 @@ fetch('./data/sections/skills.json')
 
         // --- Automated continuous slider ---
         const slider = serviceCardsContainer;
-        const cardWidth = 320 + 32; // card width + gap (2rem ≈ 32px)
+        const cardWidth = 320 + 32;
         let autoScroll;
 
         // Clone all cards for seamless looping

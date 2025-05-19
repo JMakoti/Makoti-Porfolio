@@ -6,20 +6,21 @@
             "title_long": "**Educational** Background"
         }
     },
-
     "articles": [
         {
             "id": "academic",
             "component": "ArticleTimeline",
             "config": {},
             "locales": {},
-
             "items": [
                 {
                     "icon": {
                         "img": "images/pictures/#",
                         "fa": "",
-                        "faColors": {"bg": null, "fill": null}
+                        "faColors": {
+                            "bg": null,
+                            "fill": null
+                        }
                     },
                     "dates": {
                         "start": "09/20/2020",

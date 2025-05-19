@@ -1,10 +1,13 @@
 {
-
     "profile": {
         "name": "Mwamuye Joseph ",
         "stylizedName": "<strong>Mwamuye **Joseph**</strong>",
         "logoUrl": "./images/prof.jpg",
-        "profilePictureUrl": "./images/prof.jpg"
+        "profilePictureUrl": "../images/prof.jpg",
+        "discord": "https://discord.com/users/1016661314015342592",
+        "whatsapp": "",
+        "linkedIn": "https://www.linkedin.com/in/mwamuye-joseph-ab20812a0/",
+        "github": "https://github.com/JMakoti",
+        "Twitter": "https://twitter.com/johsafe2"
     }
-
 }

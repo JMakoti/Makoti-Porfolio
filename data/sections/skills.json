@@ -6,20 +6,21 @@
             "title_long": "My **Skill Set**"
         }
     },
-
     "articles": [
         {
             "id": "capabilities",
             "component": "ArticleCards",
             "config": {},
             "locales": {},
-
             "items": [
                 {
                     "icon": {
                         "img": null,
                         "fa": "fa-solid fa-table-columns",
-                        "faColors": {"bg": null, "fill": null}
+                        "faColors": {
+                            "bg": null,
+                            "fill": null
+                        }
                     },
                     "locales": {
                         "en": {
@@ -28,12 +29,14 @@
                         }
                     }
                 },
-
                 {
                     "icon": {
                         "img": null,
                         "fa": "fa-solid fa-database",
-                        "faColors": {"bg": null, "fill": null}
+                        "faColors": {
+                            "bg": null,
+                            "fill": null
+                        }
                     },
                     "locales": {
                         "en": {
@@ -42,12 +45,14 @@
                         }
                     }
                 },
-
                 {
                     "icon": {
                         "img": null,
                         "fa": "fa-solid fa-window-restore",
-                        "faColors": {"bg": null, "fill": null}
+                        "faColors": {
+                            "bg": null,
+                            "fill": null
+                        }
                     },
                     "locales": {
                         "en": {
@@ -56,12 +61,14 @@
                         }
                     }
                 },
-
                 {
                     "icon": {
                         "img": null,
                         "fa": "fa-solid fa-lock",
-                        "faColors": {"bg": null, "fill": null}
+                        "faColors": {
+                            "bg": null,
+                            "fill": null
+                        }
                     },
                     "locales": {
                         "en": {
@@ -74,7 +81,10 @@
                     "icon": {
                         "img": null,
                         "fa": "fa fa-palette",
-                        "faColors": {"bg": null, "fill": null}
+                        "faColors": {
+                            "bg": null,
+                            "fill": null
+                        }
                     },
                     "locales": {
                         "en": {
@@ -87,7 +97,10 @@
                     "icon": {
                         "img": null,
                         "fa": "fa fa-search",
-                        "faColors": {"bg": null, "fill": null}
+                        "faColors": {
+                            "bg": null,
+                            "fill": null
+                        }
                     },
                     "locales": {
                         "en": {
@@ -97,23 +110,25 @@
                     }
                 }
             ]
-
         },
-
         {
             "id": "backend_programming",
             "component": "ArticleList",
             "config": {},
             "locales": {
-                "en": {"title": "Backend"}
+                "en": {
+                    "title": "Backend"
+                }
             },
-
             "items": [
                 {
                     "icon": {
                         "img": null,
                         "fa": "fa-brands fa-node-js",
-                        "faColors": {"bg": "#339933", "fill": "#EEE"}
+                        "faColors": {
+                            "bg": "#339933",
+                            "fill": "#EEE"
+                        }
                     },
                     "value": 95,
                     "dates": {
@@ -126,12 +141,14 @@
                         }
                     }
                 },
-              
                 {
                     "icon": {
                         "img": null,
                         "fa": "fa-solid fa-database",
-                        "faColors": {"bg": "#4479A1", "fill": "#EEE"}
+                        "faColors": {
+                            "bg": "#4479A1",
+                            "fill": "#EEE"
+                        }
                     },
                     "value": 90,
                     "dates": {
@@ -144,12 +161,14 @@
                         }
                     }
                 },
-               
                 {
                     "icon": {
                         "img": null,
                         "fa": "fa-solid fa-server",
-                        "faColors": {"bg": "#47A248", "fill": "#EEE"}
+                        "faColors": {
+                            "bg": "#47A248",
+                            "fill": "#EEE"
+                        }
                     },
                     "value": 50,
                     "dates": {
@@ -166,7 +185,10 @@
                     "icon": {
                         "img": null,
                         "fa": "fa-brands fa-git",
-                        "faColors": {"bg": "#F05032", "fill": "#111"}
+                        "faColors": {
+                            "bg": "#F05032",
+                            "fill": "#111"
+                        }
                     },
                     "value": 50,
                     "dates": {
@@ -181,21 +203,24 @@
                 }
             ]
         },
-
         {
             "id": "front_end_programming",
             "component": "ArticleList",
             "config": {},
             "locales": {
-                "en": {"title": "Frontend"}
+                "en": {
+                    "title": "Frontend"
+                }
             },
-
             "items": [
                 {
                     "icon": {
                         "img": null,
                         "fa": "fa-brands fa-html5",
-                        "faColors": {"bg": "#E34F26", "fill": "#EEE"}
+                        "faColors": {
+                            "bg": "#E34F26",
+                            "fill": "#EEE"
+                        }
                     },
                     "value": 100,
                     "dates": {
@@ -212,7 +237,10 @@
                     "icon": {
                         "img": null,
                         "fa": "fa-brands fa-css3",
-                        "faColors": {"bg": "#1572B6", "fill": "#EEE"}
+                        "faColors": {
+                            "bg": "#1572B6",
+                            "fill": "#EEE"
+                        }
                     },
                     "value": 65,
                     "dates": {
@@ -229,7 +257,10 @@
                     "icon": {
                         "img": null,
                         "fa": "fa-brands fa-js",
-                        "faColors": {"bg": "#F7DF1E", "fill": "#111"}
+                        "faColors": {
+                            "bg": "#F7DF1E",
+                            "fill": "#111"
+                        }
                     },
                     "value": 90,
                     "dates": {
@@ -246,7 +277,10 @@
                     "icon": {
                         "img": null,
                         "fa": "fa-brands fa-react",
-                        "faColors": {"bg": "#61DAFB", "fill": "#111"}
+                        "faColors": {
+                            "bg": "#61DAFB",
+                            "fill": "#111"
+                        }
                     },
                     "value": 95,
                     "dates": {
@@ -263,7 +297,10 @@
                     "icon": {
                         "img": null,
                         "fa": "fa-brands fa-bootstrap",
-                        "faColors": {"bg": "#7952B3", "fill": "#EEE"}
+                        "faColors": {
+                            "bg": "#7952B3",
+                            "fill": "#EEE"
+                        }
                     },
                     "value": 90,
                     "dates": {

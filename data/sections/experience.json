@@ -6,20 +6,21 @@
             "title_long": "**Work** Experience"
         }
     },
-
     "articles": [
         {
             "id": "work",
             "component": "ArticleTimeline",
             "config": {},
             "locales": {},
-
             "items": [
                 {
                     "icon": {
                         "img": "images/",
                         "fa": "",
-                        "faColors": {"bg": null, "fill": null}
+                        "faColors": {
+                            "bg": null,
+                            "fill": null
+                        }
                     },
                     "dates": {
                         "start": "01/01/2022",
@@ -30,7 +31,10 @@
                             "title": "**Frontend** Developer",
                             "info": "FreeLancer",
                             "text": "Developed and maintained scalable frontend systems for various clients, optimizing database performance and implementing RESTful APIs to improve application functionality.",
-                            "tags": ["React", "Tailwind Css"]
+                            "tags": [
+                                "React",
+                                "Tailwind Css"
+                            ]
                         }
                     }
                 }
