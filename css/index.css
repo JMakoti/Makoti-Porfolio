@@ -277,6 +277,98 @@ h3.profession {
 }
 
 
+/* TESTIMONIALS */
+.testimonials {
+  margin-top: 50px;
+
+}
+
+.testimonials h3 {
+  font-size: 30px;
+  font-weight: 600;
+  position: relative;
+  color: var(--text-color);
+  margin-bottom: 20px;
+  border-left: #ec1839 5px solid;
+  padding-left: 10px;
+}
+
+.testimonials-box {
+  margin-top: 30px;
+  display: flex;
+  gap: 20px;
+
+}
+
+.testimonials-box .quote-box {
+  background: linear-gradient(to bottom right, #FE5D26, #F2C078, var(--skin-light));
+  padding: 30px;
+  border-radius: 20px;
+  max-width: 90%;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  color: #333;
+  width: 400px;
+}
+
+.testimonials-box .quote-mark .fa {
+  font-size: 80px;
+  font-weight: bold;
+  color: var(--skin-light);
+  margin-top: -100px;
+}
+
+.testimonials-box .verse {
+  font-size: 15px;
+}
+
+.testimonials-box .reference {
+  font-weight: bold;
+  margin-top: 10px;
+  display: flex;
+
+}
+
+.testimonials-box .reference .ref-img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.testimonials-box .reference .ref-img img {
+  width: 100%;
+}
+
+.testimonials-box .reference .ref-img img:hover {
+  transform: scale(1.2);
+  transition: all 0.3s ease;
+}
+
+.testimonials-box .reference .ref-name {
+  font-size: 12px;
+  margin-left: 15px;
+  color: #333;
+  font-family: 'Lucida Calligraphy', cursive;
+
+}
+
+/* Personal Intrests */
+.intrests {
+  margin-top: 50px;
+
+}
+
+.intrests h3 {
+  font-size: 30px;
+  font-weight: 600;
+  position: relative;
+  color: var(--text-color);
+  margin-bottom: 20px;
+  border-left: #ec1839 5px solid;
+  padding-left: 10px;
+}
+
+
 /* Sevices */
 .container-cards {
   display: flex;
@@ -424,6 +516,8 @@ h3.profession {
     transform: rotate(360deg);
   }
 }
+
+
 
 /* CONTACTS */
 .contact-title {

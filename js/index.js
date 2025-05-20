@@ -5,7 +5,7 @@ fetch('./data/profile.json')
     .then(response => response.json())
     .then(data => {
         const profile = data.profile;
-        console.log(profile)
+        // console.log(profile)
         // Function to create profile
         function renderProfile() {
             const profileContainer = document.getElementById('profiles');
@@ -38,7 +38,7 @@ fetch('../data/structure.json')
     .then(response => response.json())
     .then(data => {
         const sections = data.sections;
-        console.log(sections)
+        // console.log(sections)
         // Function to create navigation links
         function renderNavLinks() {
             const navLinksContainer = document.getElementById('navLinks');
@@ -65,6 +65,41 @@ fetch('../data/structure.json')
     })
     .catch(error => console.error('Error loading JSON:', error));
 
+//FETCHING AND RENDERING THE TESTIMONIALS SECTION FROM THE COVER.JSON
+fetch('./data/sections/cover.json')
+    .then(response => response.json())
+    .then(data => {
+        const testimonials = data.articles[2].items;
+        console.log(testimonials)
+        // Function to create testimonials
+        function renderTestimonials() {
+            const testimonialsContainer = document.getElementById('testimonials');
+
+            // Loop through the testimonials array and create <div> elements
+            testimonials.forEach(testimonial => {
+                const listItem = document.createElement('div');
+                listItem.className = 'quote-box'
+                listItem.innerHTML = 
+                `<div class="quote-mark"><i class="fa fa-quote-left" aria-hidden="true"></i></div>
+                            <div class="verse">${testimonial.locales.en.text}
+                            </div>
+                            <div class="reference">
+                                <div class="ref-img" href="${testimonial.links.href}">
+                                   <img src="${testimonial.icon.img}" alt="${testimonial.value}">
+                                </div>
+                                <div class="ref-name">
+                                    <h4>${testimonial.value}</</h4>
+                                    <p>${testimonial.locales.en.info}</p>
+                                </div>
+                            </div>`;
+                testimonialsContainer.appendChild(listItem);
+            });
+        }
+
+        // Call the function to render the testimonials when the page loads
+        renderTestimonials();
+    })
+    .catch(error => console.error('Error loading JSON:', error));
 
 //FETCHING AND RENDERING THE SKILLS CARDS FROM SKILLS.JSON
 fetch('./data/sections/skills.json')

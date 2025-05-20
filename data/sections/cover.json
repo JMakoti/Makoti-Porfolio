@@ -114,7 +114,7 @@
                         }
                     ],
                     "icon": {
-                        "img": "images/pictures/person-1.png",
+                        "img": "./images/person.jpeg",
                         "fa": "fa-solid fa-user",
                         "faColors": null
                     },
@@ -133,7 +133,7 @@
                         }
                     ],
                     "icon": {
-                        "img": "images/pictures/person-2.png",
+                        "img": "./images/person1.jpeg",
                         "fa": null,
                         "faColors": {
                             "bg": null,
@@ -146,7 +146,30 @@
                             "text": "Collaborating with Joseph was a game changer for our development process. His expertise and problem-solving abilities were invaluable to our success."
                         }
                     }
+                } ,
+                {
+                    "value": "John M.",
+                    "links": [
+                        {
+                            "href": null
+                        }
+                    ],
+                    "icon": {
+                        "img": "./images/person3.jpeg",
+                        "fa": null,
+                        "faColors": {
+                            "bg": null,
+                            "fill": null
+                        }
+                    },
+                    "locales": {
+                         "en": {
+                            "info": "Lead Developer at <b>GitHub</b>",
+                            "text": "Having Joseph on our team was an invaluable asset. His deep programming insights and mentorship not only elevated our projects but also empowered us to tackle every challenge with confidence and creativity."
+                        }
+                    }
                 }
+               
             ]
         },
         {
