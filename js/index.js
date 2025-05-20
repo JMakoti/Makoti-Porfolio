@@ -70,7 +70,7 @@ fetch('./data/sections/cover.json')
     .then(response => response.json())
     .then(data => {
         const testimonials = data.articles[2].items;
-        console.log(testimonials)
+        // console.log(testimonials)
         // Function to create testimonials
         function renderTestimonials() {
             const testimonialsContainer = document.getElementById('testimonials');
@@ -79,8 +79,8 @@ fetch('./data/sections/cover.json')
             testimonials.forEach(testimonial => {
                 const listItem = document.createElement('div');
                 listItem.className = 'quote-box'
-                listItem.innerHTML = 
-                `<div class="quote-mark"><i class="fa fa-quote-left" aria-hidden="true"></i></div>
+                listItem.innerHTML =
+                    `<div class="quote-mark"><i class="fa fa-quote-left" aria-hidden="true"></i></div>
                             <div class="verse">${testimonial.locales.en.text}
                             </div>
                             <div class="reference">
@@ -100,6 +100,40 @@ fetch('./data/sections/cover.json')
         renderTestimonials();
     })
     .catch(error => console.error('Error loading JSON:', error));
+
+
+//FETCHING AND RENDERING THE HOBBIES SECTION FROM THE COVER.JSON
+fetch('./data/sections/cover.json')
+    .then(response => response.json())
+    .then(data => {
+        const hobbies = data.articles[3].items;
+        console.log(hobbies)
+        // Function to create hobbies
+        function renderHobbies() {
+            const hobbiesContainer = document.getElementById('hobbies');
+
+            // Loop through the hobbies array and create <div> elements
+            hobbies.forEach(hobby => {
+                const listItem = document.createElement('div');
+                listItem.className = 'hobby-card'
+                listItem.innerHTML =`
+                                <div>
+                                    <i class="${hobby.icon.fa}"></i>
+                                </div>
+                                <div>
+                                    <h3>${hobby.locales.en.title}</h3>
+                                    <p>${hobby.locales.en.info}</p>
+                                </div>
+                            `;
+                hobbiesContainer.appendChild(listItem);
+            });
+        }
+
+        // Call the function to render the hobbies when the page loads
+        renderHobbies();
+    })
+    .catch(error => console.error('Error loading JSON:', error));
+
 
 //FETCHING AND RENDERING THE SKILLS CARDS FROM SKILLS.JSON
 fetch('./data/sections/skills.json')

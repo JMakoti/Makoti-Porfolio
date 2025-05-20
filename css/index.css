@@ -280,6 +280,7 @@ h3.profession {
 /* TESTIMONIALS */
 .testimonials {
   margin-top: 50px;
+  font-family: 'Segoe UI', sans-serif;
 
 }
 
@@ -358,7 +359,7 @@ h3.profession {
 
 }
 
-.intrests h3 {
+.intrests .intrests-head {
   font-size: 30px;
   font-weight: 600;
   position: relative;
@@ -366,6 +367,53 @@ h3.profession {
   margin-bottom: 20px;
   border-left: #ec1839 5px solid;
   padding-left: 10px;
+}
+
+.intrests-box {
+  color: #fff;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.hobbies-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  /* Two columns */
+  gap: 2rem;
+}
+
+.hobby-card {
+  background: transparent;
+  padding: 1rem;
+  border-radius: 12px;
+  width: 500px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  display: flex;
+  /* justify-content: space-between; */
+  gap: 20px;
+
+}
+
+.hobby-card:hover {
+  transform: translateY(-5px);
+}
+
+.hobby-card i {
+  display: inline-block;
+  margin-bottom: 1rem;
+  font-size: 80px;
+  background-color: var(--skin-color);
+  border-radius: 50%;
+}
+
+.hobby-card h3 {
+  margin: 0 0 0.5rem;
+  font-size: 1.2rem;
+  color: #fff;
+}
+
+.hobby-card p {
+  color: #aaa;
+  font-size: 0.95rem;
 }
 
 
